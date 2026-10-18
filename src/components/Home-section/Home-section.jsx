@@ -24,8 +24,8 @@ function HomeSection() {
 
         <div className="home-image-column">
           <img
-            src="assets/profile.png"
-            alt="Portrait for Mahllet's portfolio"
+            src="/src/assets/profile.png"
+            alt="Portrait for Mahlet's portfolio"
             className="home-img"
           />
 
