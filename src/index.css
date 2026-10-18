@@ -183,7 +183,8 @@ ul {
 }
 .button {
   display: inline-flex;
-  background: #0a192f;
+  align-items: center;
+  background: #011025;
   color: #e6f1ff;
   padding: 1.25rem 2rem;
   border-radius: 0.5rem;
@@ -203,6 +204,7 @@ ul {
   display: block;
   width: 100%;
   max-width: 480px;
+  height: auto;
   max-height: 620px;
   object-fit: contain;
 }
