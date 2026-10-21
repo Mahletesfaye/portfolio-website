@@ -181,6 +181,7 @@ ul {
   max-width: 540px;
   margin-block: 1.5rem 2rem;
 }
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -223,4 +224,14 @@ ul {
 .home-social-link:hover {
   color: #ffffff;
   transform: translateY(-3px);
+}
+.btn-outline {
+    border-color: var(--text-color);
+    color: var(--text-color);
+    background: transparent;
+}
+
+.btn-outline:hover {
+    border-color: var(--accent-light);
+    background: rgba(120, 68, 255, 0.1);
 }

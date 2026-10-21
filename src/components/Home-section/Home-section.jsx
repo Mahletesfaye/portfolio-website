@@ -10,7 +10,7 @@ function HomeSection() {
             Tesfaye
           </h1>
 
-          <h3 className="home-job">I am a Web Developer.</h3>
+          <h3 className="home-job">I am a <span>Web Developer</span></h3>
 
           <p className="home-description">
             I create beautiful and functional websites with a focus on
@@ -18,8 +18,12 @@ function HomeSection() {
           </p>
 
           <a href="#portfolio" className="button">
-            View Portfolio
+            View Projects
           </a>
+          <a href="assets/Mahlet-CV.pdf" className="btn btn-outline" download>
+                            <i class="fa-solid fa-download"></i>
+                            Download CV
+                        </a>
         </div>
 
         <div className="home-image-column">
