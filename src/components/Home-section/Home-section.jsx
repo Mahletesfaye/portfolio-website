@@ -10,7 +10,7 @@ function HomeSection() {
             Tesfaye
           </h1>
 
-          <h3 className="home-job">I am a <span>Web Developer</span></h3>
+          <h3 className="home-job">I am a <span>Web Developer.</span></h3>
 
           <p className="home-description">
             I create beautiful and functional websites with a focus on

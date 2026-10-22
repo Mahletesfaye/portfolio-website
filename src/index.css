@@ -172,8 +172,11 @@ ul {
 }
 .home-job {
   font-size: h2 font-size;
-  margin-bottom: 1.5rem;
-
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.home-job span {
+  color: #8b5cf6;
 }
 .home-description {
   font-size: large;
@@ -181,19 +184,30 @@ ul {
   max-width: 540px;
   margin-block: 1.5rem 2rem;
 }
-
 .button {
+  background: #7844ff;
+  color: #ffffff;
+  border: 1px solid #7844ff;
+}
+.button,
+.btn-outline {
   display: inline-flex;
   align-items: center;
-  background: #011025;
-  color: #e6f1ff;
-  padding: 1.25rem 2rem;
+  gap: 0.5rem;
+  padding: 1rem 1.5rem;
   border-radius: 0.5rem;
   font-weight: 500;
-  transition: background-color 0.3s ;
+  text-decoration: none;
+  transition: 0.3s ease;
 }
+
 .button:hover {
-  background:linear-gradient(260deg, #0a192f, #1e2a47);
+    background: #6232df;
+    transform: translateY(-3px);
+}.btn-outline {
+  background: transparent;
+  color: #e6f1ff;
+  border: 1px solid #8b5cf6;
 }
 .home-image-column {
   display: flex;
