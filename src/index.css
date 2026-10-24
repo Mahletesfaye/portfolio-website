@@ -249,3 +249,137 @@ ul {
     border-color: var(--accent-light);
     background: rgba(120, 68, 255, 0.1);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* About Section */
+.About-section {
+  min-height: 100vh;
+  padding: 8rem 0 5rem;
+  background-color: #0a192f;
+  color: #e6f1ff;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+/* Main container */
+.about-container {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  display: grid;
+  grid-template-columns: 0.85fr 1.4fr;
+  align-items: center;
+  gap: 4rem;
+}
+
+/* Developer badge */
+.developer-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: fit-content;
+  padding: 0.85rem 1.25rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #8b5cf6;
+  border-radius: 0.75rem;
+  background-color: #081a35;
+  color: #e6f1ff;
+  font-weight: 600;
+}
+
+.developer-badge i {
+  color: #8b5cf6;
+  font-size: 1.4rem;
+}
+
+/* About content */
+.about-content {
+  max-width: 750px;
+}
+
+/* Small heading */
+.section-subtitle {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #8b5cf6;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+/* Main heading */
+.section-title {
+  margin-bottom: 1.5rem;
+  color: #e6f1ff;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.section-title span {
+  color: #8b5cf6;
+}
+
+/* Introduction */
+.about-intro {
+  max-width: 650px;
+  margin-top: 1.5rem;
+  color: #cbd5e1;
+  font-size: 1.25rem;
+  line-height: 1.9;
+}
+
+/* Tablet */
+@media (max-width: 950px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .about-content {
+    max-width: 700px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .About-section {
+    padding: 7rem 0 4rem;
+  }
+
+  .section-title {
+    font-size: 2.8rem;
+  }
+
+  .about-intro {
+    font-size: 1.05rem;
+  }
+
+  .developer-badge {
+    padding: 0.7rem 1rem;
+  }
+}

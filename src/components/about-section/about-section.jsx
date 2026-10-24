@@ -14,9 +14,6 @@ function AboutSection() {
                     <h1 className="section-title">
                         About <span>Me</span>
                     </h1>
-                      <div className="title-line"></div>
-
-                    <h2>Hello! I'm Mahlet Tesfaye</h2>
 
                     <p className="about-intro">
                         A passionate Web Developer who enjoys turning
