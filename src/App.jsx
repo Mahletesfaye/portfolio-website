@@ -2,8 +2,7 @@ import React from 'react'
 import Header from './components/Header/Header.jsx'
 import HomeSection from './components/Home-section/Home-section.jsx'
 import AboutSection from './components/About-section/About.jsx'
-
-
+import Services from './components/services/services.jsx'
 
 function App() {
   return (
@@ -11,6 +10,8 @@ function App() {
       <Header />
       <HomeSection />
       <AboutSection />
+      <Services />
+      
     
 
       

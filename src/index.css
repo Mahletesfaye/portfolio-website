@@ -180,19 +180,36 @@ ul {
   max-width: 540px;
   margin-block: 1.5rem 2rem;
 }
-.button {
+
+
+.button,
+.btn-outline {
   display: inline-flex;
   align-items: center;
-  background: #011025;
-  color: #e6f1ff;
-  padding: 1.25rem 2rem;
+  justify-content: center;
+  gap: 10px;
+  padding: 1.1rem 2rem;
+  border: 1px solid transparent;
   border-radius: 0.5rem;
-  font-weight: 500;
-  transition: background-color 0.3s ;
+  background: linear-gradient(110deg, #3B82F6, #597db7);
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
-.button:hover {
-  background:linear-gradient(260deg, #0a192f, #1e2a47);
+
+.button:hover,
+.btn-outline:hover {
+  background: linear-gradient(110deg, #3b82f6, #3B82F6);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(139, 92, 246, 0.3);
 }
+
+.button i,
+.btn-outline i {
+  font-size: 1rem;
+}
+
 .home-image-column {
   display: flex;
   align-items: center;
@@ -293,7 +310,7 @@ ul {
 
 /* Main heading */
 
-.section-title {
+.page-title {
   font-family: 'Space Grotesk', sans-serif;
   font-size: clamp(3rem, 6vw, 5rem);
   font-weight: 700;
@@ -304,8 +321,8 @@ ul {
   margin-bottom: 1.8rem;
 }
 
-.section-title span {
-  color: #8b5cf6;
+.page-title span {
+  color: #8086d0;
 }
 
 /* Introduction */
@@ -392,7 +409,7 @@ ul {
     letter-spacing: 2px;
   }
 
-  .section-title {
+  .page-title {
     letter-spacing: -1px;
     margin-bottom: 1.25rem;
   }
@@ -405,4 +422,25 @@ ul {
     font-size: 0.95rem;
     line-height: 1.8;
   }
+}
+
+/* SERVICES */
+
+.section-title {
+  text-align: center;
+  font-size: large;
+  margin-bottom: 4.25rem;
+}
+.services-container {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+.service-card {
+  background: fixed;
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: background 0.3s;
+}
+.service-card:hover {
+  background: fixed;
 }

@@ -15,7 +15,7 @@ function AboutSection() {
             GET TO KNOW ME
           </span>
 
-          <h1 className="section-title">
+          <h1 className="page-title">
             About <span>Me</span>
           </h1>
 
