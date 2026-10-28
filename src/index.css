@@ -191,7 +191,7 @@ ul {
   padding: 1.1rem 2rem;
   border: 1px solid transparent;
   border-radius: 0.5rem;
-  background: linear-gradient(110deg, #3B82F6, #597db7);
+  background: linear-gradient(110deg, #3B82F6, #3B82F6);
   color: #ffffff;
   font-weight: 600;
   text-decoration: none;
@@ -293,7 +293,7 @@ ul {
 
 .developer-badge i {
   font-size: 1rem;
-  color: #a78bfa;
+  color: #3B82F6;
 }
 
 /* Small section label */
@@ -302,7 +302,7 @@ ul {
   display: block;
   margin-bottom: 1rem;
 
-  color: #a78bfa;
+  color: #3B82F6;
   font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 3px;
@@ -322,7 +322,7 @@ ul {
 }
 
 .page-title span {
-  color: #8086d0;
+  color: #3B82F6;
 }
 
 /* Introduction */
@@ -340,54 +340,15 @@ ul {
 .about-description {
   max-width: 720px;
   margin-bottom: 2.25rem;
-
-  color: #b8c8df;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.9;
 }
 
-/* Projects button */
-
-.about-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.85rem;
-
-  padding: 1rem 1.6rem;
-  border: 1px solid #8b5cf6;
-  border-radius: 8px;
-
-  background: #8b5cf6;
-  color: #ffffff;
-
-  font-size: 0.95rem;
-  font-weight: 600;
-
-  transition:
-    background-color 0.3s ease,
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-}
-
-.about-button:hover {
-  background: #7c3aed;
-  box-shadow: 0 8px 25px rgba(139, 92, 246, 0.22);
-  transform: translateY(-3px);
-}
-
-.about-button i {
-  transition: transform 0.3s ease;
-}
-
-.about-button:hover i {
-  transform: translateX(5px);
-}
 
 
 /* =========================
-   RESPONSIVE DESIGN
+    RESPONSIVE DESIGN
 ========================= */
 
 @media (max-width: 768px) {
@@ -424,6 +385,10 @@ ul {
   }
 }
 
+
+
+
+
 /* SERVICES */
 
 .section-title {
@@ -436,11 +401,28 @@ ul {
   gap: 1.75rem;
 }
 .service-card {
-  background: fixed;
+  background: rgba(31, 30, 31, 0.667);
   padding: 2rem;
   border-radius: 1rem;
   transition: background 0.3s;
 }
+
+
+
 .service-card:hover {
-  background: fixed;
+  background: #3B82F6;
+}
+.service-no {
+  font-size: 20px;
+  font-weight: bold;
+}
+.section-title {
+  font-size: 30px;
+  margin-block: 1.25rem 0.75rem;
+}
+.service-description {
+  font-size: large;
+}
+.service-card:hover :is(.service-no, .service-title, .service-description) {
+  color: white;
 }

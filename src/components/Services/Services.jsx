@@ -23,7 +23,7 @@ function Services() {
             </article>
         </div>
     </section>
-  )
+)
 }
 
 export default Services
