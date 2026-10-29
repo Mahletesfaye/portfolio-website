@@ -3,6 +3,8 @@ import Header from './components/Header/Header.jsx';
 import HomeSection from './components/Home-section/Home-section.jsx';
 import AboutSection from './components/About-section/About.jsx';
 import Services from './components/Services/Services.jsx';
+import Skills from './components/Skills/Skills.jsx';
+
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
       <HomeSection />
       <AboutSection />
       <Services />
+      <Skills />
     </div>
   );
 }
