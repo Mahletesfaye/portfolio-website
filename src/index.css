@@ -810,3 +810,381 @@ ul {
     font-size: 32px;
   }
 }
+
+
+/* ==============================
+   PROJECTS SECTION
+================================ */
+
+.projects-section {
+  position: relative;
+  padding: 100px 5%;
+  background: #070b1a;
+  color: #ffffff;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* Background Decorations */
+
+.projects-section::before,
+.projects-section::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(112, 45, 255, 0.16);
+  filter: blur(90px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.projects-section::before {
+  top: -120px;
+  left: -100px;
+}
+
+.projects-section::after {
+  bottom: -150px;
+  right: -100px;
+}
+
+/* Main Container */
+
+.projects-container {
+  max-width: 1350px;
+  margin: auto;
+}
+
+/* ==============================
+   HEADER
+================================ */
+
+.projects-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.projects-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 22px;
+  border: 1px solid #843dff;
+  border-radius: 30px;
+  color: #a978ff;
+  font-size: 14px;
+  margin-bottom: 18px;
+  box-shadow: 0 0 15px rgba(132, 61, 255, 0.15);
+}
+
+.projects-title {
+  font-size: clamp(2.5rem, 5vw, 3.7rem);
+  font-weight: 800;
+  margin-bottom: 15px;
+  letter-spacing: -2px;
+}
+
+.projects-title span {
+  background: linear-gradient(90deg, #a855f7, #713cff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.projects-subtitle {
+  color: #b5bdd2;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* ==============================
+   CATEGORY FILTERS
+================================ */
+
+.projects-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 35px 0 30px;
+}
+
+.filter-btn {
+  padding: 11px 25px;
+  border: 1px solid #39405b;
+  border-radius: 30px;
+  background: transparent;
+  color: #d5d9e7;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.filter-btn:hover {
+  border-color: #8b5cf6;
+  color: #ffffff;
+}
+
+.filter-btn.active {
+  background: linear-gradient(135deg, #9147ff, #6735d9);
+  border-color: transparent;
+  color: #ffffff;
+  box-shadow: 0 5px 20px rgba(124, 58, 237, 0.3);
+}
+
+/* ==============================
+   PROJECT GRID
+================================ */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px 24px;
+}
+
+/* ==============================
+   PROJECT CARD
+================================ */
+
+.project-card {
+  background: linear-gradient(145deg, #11182e, #0c1022);
+  border: 1px solid #252c49;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.35s ease, border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: #8145ef;
+  box-shadow: 0 15px 35px rgba(111, 54, 220, 0.15);
+}
+
+/* ==============================
+   PROJECT IMAGE
+================================ */
+
+.project-image {
+  position: relative;
+  height: 210px;
+  margin: 5px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #171d35;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.06);
+}
+
+/* Image Overlay */
+
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(7, 10, 25, 0.78);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-overlay a {
+  color: #ffffff;
+  background: #8545f5;
+  text-decoration: none;
+  padding: 11px 20px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+/* ==============================
+   PROJECT INFORMATION
+================================ */
+
+.project-info {
+  position: relative;
+  padding: 16px 15px 15px;
+}
+
+.project-icon {
+  color: #bd69e9;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.project-details h3 {
+  font-size: 17px;
+  margin-bottom: 9px;
+  font-weight: 700;
+  color: #f5f3ff;
+}
+
+.project-details p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #b8c1d5;
+  margin-bottom: 14px;
+}
+
+/* Technology Tags */
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 15px;
+}
+
+.project-tech span {
+  font-size: 11px;
+  color: #dce0ef;
+  background: #252d45;
+  padding: 6px 10px;
+  border-radius: 20px;
+}
+
+/* ==============================
+   PROJECT LINKS
+================================ */
+
+.project-links {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 12px;
+  border-radius: 25px;
+  font-size: 12px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.live-btn {
+  color: #b68aff;
+  border: 1px solid #8747f5;
+}
+
+.live-btn:hover {
+  background: #8747f5;
+  color: #ffffff;
+}
+
+.github-btn {
+  color: #e4e6f0;
+  border: 1px solid #555d78;
+}
+
+.github-btn:hover {
+  background: #ffffff;
+  color: #111827;
+}
+
+/* ==============================
+   VIEW MORE BUTTON
+================================ */
+
+.projects-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+.projects-more a {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 27px;
+  border: 1px solid #9147ff;
+  border-radius: 30px;
+  color: #ad7aff;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.projects-more a:hover {
+  background: #8145ef;
+  color: #ffffff;
+  box-shadow: 0 5px 25px rgba(129, 69, 239, 0.3);
+}
+
+.projects-more i {
+  transition: transform 0.3s ease;
+}
+
+.projects-more a:hover i {
+  transform: translateX(5px);
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+================================ */
+
+@media screen and (max-width: 1000px) {
+
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .projects-section {
+    padding: 75px 5%;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-title {
+    font-size: 2.5rem;
+  }
+
+  .projects-subtitle {
+    font-size: 14px;
+  }
+
+  .projects-filters {
+    gap: 9px;
+  }
+
+  .filter-btn {
+    padding: 9px 15px;
+    font-size: 12px;
+  }
+
+  .project-image {
+    height: 200px;
+  }
+
+}
