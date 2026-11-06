@@ -24,7 +24,7 @@ function AboutSection() {
           </p>
 
           <p className="about-description">
-            I specialize in building intuitive and visually engaging websites using modern web technologies. With a strong interest in problem-solving, clean code, and continuous learning, I strive to transform ideas into accessible, functional, and high-quality digital solutions.
+            I'm a passionate web developer who loves transforming ideas into functional and engaging digital experiences. I enjoy exploring new technologies, solving problems, and building innovative solutions through code.
           </p>
 
           
