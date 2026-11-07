@@ -1189,3 +1189,28 @@ ul {
 
 }
 /* PORTFOLIO */
+
+
+
+
+
+
+
+
+/* Contact */
+.contact {
+  padding-bottom: 8rem;
+}
+.contact-container {
+  grid-template-columns: repeat(5.5fr 6.5fr);
+  column-gap: 3rem;
+}
+.contact-section-title {
+  text-align: left;
+}
+.contact-data {
+  row-gap: 2rem;
+}
+.contact-item {
+  display: grid; 
+}
