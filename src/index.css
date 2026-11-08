@@ -1212,5 +1212,18 @@ ul {
   row-gap: 2rem;
 }
 .contact-item {
-  display: grid; 
+  display: grid;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+.contact-icon {
+  width: 68px;
+  aspect-ratio: 1/1;
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+}
+.contact-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
 }
