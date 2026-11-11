@@ -353,6 +353,17 @@ ul {
 /* =========================
     RESPONSIVE DESIGN
 ========================= */
+@media screen and (max-width: 1024) {
+  .nav{
+    height: 3.75rem;
+  }
+  .nav-toggle,
+  .nav-close {
+    display: inline-flex;
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+}
 
 @media (max-width: 768px) {
   .About-section {
