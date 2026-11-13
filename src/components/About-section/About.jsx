@@ -6,15 +6,6 @@ function AboutSection() {
       <div className="about-container container">
         <div className="about-content">
 
-          <div className="developer-badge">
-            <i className="fa-solid fa-code"></i>
-            <span>Web Developer</span>
-          </div>
-
-          <span className="section-subtitle">
-            GET TO KNOW ME
-          </span>
-
           <h1 className="page-title">
             About <span>Me</span>
           </h1>
