@@ -9,10 +9,7 @@ function Portfolio() {
         <div className="container">
 
         <ul className="work-list">
-            <li className="work-item active-work">All</li>
-            <li className="work-item">Photography</li>
-            <li className="work-item">Development</li>
-            <li className="work-item">Design</li>
+            <li className="work-item active-work">Recent Projects</li>
         </ul>
 
         <div className="work-container grid">
